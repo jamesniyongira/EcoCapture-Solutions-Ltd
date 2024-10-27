@@ -1,0 +1,148 @@
+
+/* Career Section */
+.career {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.career h2 {
+    font-size: 36px;
+    color: #07022b;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.career p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Job Listings */
+.job-listings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.job {
+    background-color: #f4f4f4;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: slideInUp 1.5s ease-in-out;
+}
+
+.job h3 {
+    font-size: 24px;
+    color: #07022b;
+    margin-bottom: 15px;
+}
+
+.job p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.job:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-10px);
+}
+
+/* Apply Now Button */
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #055c79;
+    transform: scale(1.05);
+}
+
+/* Submit Your Resume Section */
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    animation: slideInUp 2s ease-in-out;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #055c79;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+

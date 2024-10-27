@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCapture Solutions Ltd</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional CSS */
+        .sign-in-form, .login-form {
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .sign-in-form input, .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .subscribe-btn {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hamburger-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .show-menu {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="EcoCapture Logo" class="logo">
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="navMenu">
+                <ul>
+                    <li><b><a href="index.html">Home</a></b></li>
+                    <li class="dropdown">
+                        <a href="#"><b>Products and Services</b></a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-section">
+                                <span class="dropdown-section-title">Products</span>
+                                <ul class="dropdown-items">
+                                    <li><a href="#capture-technology">CO₂ Capture Technology</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="dropdown-section">
+                                <span class="dropdown-section-title">Services</span>
+                                <ul class="dropdown-items">
+                                    <li><a href="product3.html">Eco-Friendly Solutions</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><b>About Us</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#about">Our Mission</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><b>Solutions</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#our-solutions">CO₂ Capture Technology</a></li>
+                            <li><a href="#capture-technology">Cost-Efficient Solutions</a></li>
+                            <li><a href="#innovative">Innovative Strategies</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><b>Blog</b></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#sustainability">Sustainability</a></li>
+                            <li><a href="#technology">Technology Trends</a></li>
+                            <li><a href="#environment">Environment News</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li><a href="#career">Careers</a></li>
+                    <li class="dropdown">
+                        <a href="#contact">Contact Us</a>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content"><br><br><br><br><br><br>
+            <h1>EcoCapture Solutions Ltd</h1>
+            <h2>Innovative CO₂ Capture Solutions</h2>
+            <p>Balancing industrial development and environmental sustainability.</p><br>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section class="about">
+    <h2 id="about" class="about-heading">About Us</h2>
+    <p>EcoCapture Solutions Ltd is dedicated to providing innovative CO₂ capture solutions. Our mission is to balance industrial growth with environmental responsibility.</p>
+</section>
+
+
+    <!-- Introduction Video Section -->
+    <section class="intro-video">
+        <h2>Discover Our Mission</h2>  
+        <div class="video-container">
+            <video width="800" controls>
+                <source src="videos/introduction video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2 id="our-solutions">Our Solutions</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3 id="capture-technology">CO₂ Capture Technology</h3>
+                <p>We offer advanced CO₂ capture solutions that are both effective and sustainable.</p>
+            </div>
+            <div class="service">
+                <h3 id="capture-technology">Cost-Efficient Solutions</h3>
+                <p>Our solutions are designed to be cost-effective for businesses in Rwanda and East Africa.</p>
+            </div>
+            <div class="service">
+                <h3 id="capture-technology">Innovative Strategies</h3>
+                <p>Emphasizes environmentaly friendly solutions that promote sustainability in business operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="team">
+        <h2 id="team" class="team-heading">Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <div class="member-img">
+                    <img src="images/CEO.jpeg" alt="CEO Kevin Iraguha">
+                </div>
+                <div class="member-info">
+                    <h3>KEVIN IRAGUHA</h3>
+                    <p>BSc with honours in Business Administration and BSc in Mechanical and Energy Engineering.</p>
+                    <b><p>CEO & Founder</p></b><br>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 2 -->
+        <div class="team-member">
+            <div class="member-img">
+                <img src="images/Cofounder1.jpeg" alt="Cofounder 1">
+            </div>
+            <div class="member-info">
+                <h3>JOSEPH RUTAYISIRE</h3>
+                <p>BSc with honours in Botany and Conservation.</p>
+                <b><p>COFOUNDER</p></b><br><br><br>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="team-member">
+            <div class="member-img">
+                <img src="images/Cofounder2.jpeg" alt="Cofounder 2">
+            </div>
+            <div class="member-info">
+                <h3>JEAN DE DIEU MUTABAZI</h3>
+                <p>BSc with honours in Environmental Chemistry.</p>
+                <b><p>COFOUNDER</p></b><br><br><br>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="team-member">
+            <div class="member-img">
+                <img src="images/Cofounder3.jpeg" alt="Cofounder 3">
+            </div>
+            <div class="member-info">
+                <h3>ARTHUR KAYIJUKA</h3>
+                <p>BSc with honours in Environmental Chemistry.</p>
+                <b><p>COFOUNDER</p></b><br><br><br>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 5 -->
+        <div class="team-member">
+            <div class="member-img">
+                <img src="images/Cofounder4.jpeg" alt="Cofounder 4">
+            </div>
+            <div class="member-info">
+                <h3>VINCENT NIYIGABA</h3>
+                <p>MSc in Renewable Energy.</p>
+                <b><p>ADVISER</p></b><br><br><br><br>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+</section>
+
+ <!-- Our Partners Section -->
+ <section class="partners">
+    <h2>Our Partners</h2>
+    <div class="partner-container">
+        <div class="partner">
+            <img src="images/CEO.jpeg" alt="Partner 1">
+            <p>Partner 1</p>
+        </div>
+
+        <div class="partner">
+            <img src="images/Cofounder1.jpeg" alt="Partner 2">
+            <p>Partner 2</p>
+        </div>
+
+        <div class="partner">
+            <img src="images/Cofounder2.jpeg" alt="Partner 3">
+            <p>Partner 3</p>
+        </div>
+
+        <div class="partner">
+            <img src="images/Cofounder3.jpeg" alt="Partner 4">
+            <p>Partner 4</p>
+        </div>
+
+        <div class="partner">
+            <img src="images/Cofounder4.jpeg" alt="Partner 5">
+            <p>Partner 5</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <blockquote>"EcoCapture has completely transformed our approach to environmental sustainability! Their innovative solutions have reduced our carbon footprint significantly, making us industry leaders in eco-conscious practices." - Client A</blockquote>
+    <a href="#about" class="cta-button">Read More</a>
+    <blockquote>"The innovative CO₂ capture technology provided by EcoCapture has made a profound impact on our operations. Not only are we achieving our sustainability goals, but we are also witnessing cost savings and improved efficiency." - Client B</blockquote>
+    <a href="#about" class="cta-button">Read More</a>
+    <blockquote>"EcoCapture's cutting-edge CO₂ capture solutions have empowered our company to set new benchmarks in environmental responsibility. Our clients and stakeholders are impressed with our commitment to sustainable practices!" - Client C</blockquote>
+    <a href="#about" class="cta-button">Read More</a>
+
+</section>
+
+
+
+<!-- Portfolio Section -->
+<section class="portfolio">
+    <h2>Our Work</h2>
+    <p>Explore a range of our impactful projects focused on cutting-edge CO₂ capture solutions. Each project showcases our commitment to sustainability and innovation, where we apply advanced technologies and strategies to reduce carbon footprints effectively. From industrial collaborations to community-driven initiatives, our work demonstrates real-world applications of CO₂ capture technology, transforming environmental challenges into sustainable solutions. We are dedicated to creating a positive impact on the environment by addressing pressing climate issues and contributing to a cleaner, greener future for all.</p>
+</section>
+
+
+<!-- Blog Section -->
+
+<section id="sustainability" class="blog">
+    <div class="container">
+        <h2>Blogs</h2>
+        <h3>Sustainability Blog</h3>
+        <p>Stay updated with the latest innovations and industry news in the field of CO₂ capture technology.</p>
+        <!-- Additional content for the Sustainability section -->
+    </div>
+</section>
+
+<section id="technology" class="blog">
+    <div class="container">
+        <h3>Technology Trends Blog</h3>
+        <p>Explore future trends and emerging technologies in the field of CO₂ capture and how they will shape the industry.</p>
+        <!-- Additional content for the Technology section -->
+    </div>
+</section>
+
+<section id="environment" class="blog">
+    <div class="container">
+        <h3>Environment News Blog</h3>
+        <p>Discover real-world examples of successful CO₂ capture projects and their impact on sustainability.</p>
+        <!-- Additional content for the Environment section -->
+    </div>
+</section>
+
+
+
+<!-- Career Section -->
+<section id="career" class="career">
+    <h2>Join Our Team</h2>
+    <p>Explore career opportunities at EcoCapture Solutions</p>
+    
+    <div class="job-listings">
+        <div class="job">
+            <h3>Environmental Engineer</h3>
+            <p>Responsible for developing innovative CO₂ capture technology solutions.</p>
+            <a href="#resume" class="cta-button">Apply Now</a>
+        </div>
+
+        <div class="job">
+            <h3>Research Scientist</h3>
+            <p>Lead research efforts in environmental sustainability and CO₂ reduction.</p>
+            <a href="#resume" class="cta-button">Apply Now</a>
+
+        </div>
+
+        <div class="job">
+            <h3>Project Manager</h3>
+            <p>Manage large-scale projects focused on sustainability and CO₂ capture.</p>
+            <a href="#resume" class="cta-button">Apply Now</a>
+
+        </div>
+    </div>
+    </section>
+
+    
+    <section class="resume-section">
+       
+        <h2>Submit Your Resume</h2>
+        <form action="#" method="POST">
+            <h2><legend id="contact-form">Insert all the required details</legend></h2>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" name="resume" required>
+            
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
+    
+    
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter">
+        <h2>Stay Updated with EcoCapture</h2>
+        <p>Subscribe to our newsletter for the latest updates and exclusive offers!</p>
+        <form class="sign-in-form">
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+        <form action="#" method="POST" aria-labelledby="contact-form">
+            <fieldset>
+                <legend id="contact-form">Contact Form</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="2" required></textarea>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        <div class="contact-details">
+            <p><strong>Phone:</strong> +250781392398</p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/250788856779" target="_blank">Chat with us</a></p>
+            <p><strong>Email:</strong> info@ecocapture.com</p>
+            <p><strong>Address:</strong> Kigali, Rwanda</p>
+            <p><strong>Follow Us:</strong></p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <!-- WhatsApp Chat Button -->
+     <a href="https://wa.me/250788856779" class="whatsapp-button" target="_blank" aria-label="Chat with us on WhatsApp" role="button" aria-pressed="false">
+        <img src="images/chat.png" alt="WhatsApp" class="whatsapp-icon">
+        <span class="button-text">Chat with us</span>
+    </a>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="EcoCapture Solutions Logo">
+                <p>Contact Us: info@ecocapture.com | Kigali, Rwanda</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2024 EcoCapture Solutions Ltd</p>
+    </footer>
+
+    <script>
+        document.getElementById('hamburgerMenu').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('show-menu');
+        });
+    </script>
+</body>
+</html>

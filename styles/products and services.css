@@ -1,0 +1,40 @@
+
+/* Main Section */
+.products {
+    padding: 100px 0 40px; /* Top padding for space below the fixed header */
+    background-color: #f9f9f9;
+}
+
+.products h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #28a745;
+    text-align: center;
+}
+
+.product {
+    background: #ffff;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+}
+
+.product h2 {
+    font-size: 2rem;
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+.product p {
+    font-size: 1.2rem;
+    color: #f1eaea;
+    font-size: 16px;
+    color: #000; /* Black color for content text */
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center; /* Center the paragraph */
+    animation: fadeInUp 1s ease-in-out;
+    }
