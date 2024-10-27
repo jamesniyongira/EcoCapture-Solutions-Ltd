@@ -7,6 +7,17 @@ const navToggle = document.querySelector('.nav-toggle');
 navToggle.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
+    document.addEventListener("DOMContentLoaded", function() {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const navMenu = document.querySelector("nav ul");
+
+        hamburgerMenu.addEventListener("click", function() {
+            navMenu.classList.toggle("show-menu");
+        });
+    });
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('show-menu');
+    });
 
 // 2. Dropdown Functionality for Navigation
 document.querySelectorAll('.dropdown').forEach(dropdown => {
@@ -34,7 +45,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // 4. WhatsApp Button Click
 const whatsappButton = document.querySelector('.whatsapp-button');
 whatsappButton.addEventListener('click', () => {
-    window.open('https://wa.me/YOUR_PHONE_NUMBER', '_blank');
+    window.open('https://wa.me/250781392398', '_blank');
 });
 
 // 5. Form Validation for Contact Form
@@ -83,6 +94,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
+
 // 8. Scroll Back to Top Button
 const scrollToTopBtn = document.createElement('button');
 scrollToTopBtn.textContent = '↑';
@@ -120,3 +132,51 @@ function animateOnScroll() {
 
 window.addEventListener('scroll', animateOnScroll);
 animateOnScroll(); // Call once to check visibility on page load
+document.addEventListener("DOMContentLoaded", function() {
+    // Mobile Menu Toggle
+    const hamburgerMenu = document.getElementById("hamburgerMenu");
+    const navMenu = document.getElementById("navMenu");
+
+    hamburgerMenu.addEventListener("click", function() {
+        navMenu.classList.toggle("show-menu");
+    });
+
+    // Dropdown Functionality
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+        dropdown.addEventListener('mouseenter', () => {
+            dropdown.querySelector('.dropdown-content').classList.add('show');
+        });
+        dropdown.addEventListener('mouseleave', () => {
+            dropdown.querySelector('.dropdown-content').classList.remove('show');
+        });
+    });
+
+    // Smooth Scroll for Anchor Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Scroll to Top Button Functionality
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.style.display = "block"; // Show button
+        } else {
+            scrollToTopBtn.style.display = "none"; // Hide button
+        }
+    });
+
+    // Smooth scroll to the top when button is clicked
+    scrollToTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Smooth scroll effect
+        });
+    });
+});
+

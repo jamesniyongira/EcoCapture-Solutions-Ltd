@@ -420,7 +420,7 @@
         </form>
         <div class="contact-details">
             <p><strong>Phone:</strong> +250781392398</p>
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/250788856779" target="_blank">Chat with us</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/250781392398" target="_blank">Chat with us</a></p>
             <p><strong>Email:</strong> info@ecocapture.com</p>
             <p><strong>Address:</strong> Kigali, Rwanda</p>
             <p><strong>Follow Us:</strong></p>
@@ -435,33 +435,80 @@
 </section>
 
      <!-- WhatsApp Chat Button -->
-     <a href="https://wa.me/250788856779" class="whatsapp-button" target="_blank" aria-label="Chat with us on WhatsApp" role="button" aria-pressed="false">
+     <a href="https://wa.me/250781392398" class="whatsapp-button" target="_blank" aria-label="Chat with us on WhatsApp" role="button" aria-pressed="false">
         <img src="images/chat.png" alt="WhatsApp" class="whatsapp-icon">
         <span class="button-text">Chat with us</span>
     </a>
     
 
     <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <img src="images/logo.png" alt="EcoCapture Solutions Logo">
-                <p>Contact Us: info@ecocapture.com | Kigali, Rwanda</p>
-            </div>
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
+<footer>
+    <div class="container">
+        <div class="footer-logo">
+            <button class="scroll-to-top" id="scrollToTopBtn">↑</button>
+            <img src="images/logo.png" alt="EcoCapture Solutions Logo">
+            <p>Contact Us: info@ecocapture.com | Kigali, Rwanda</p>
         </div>
-        <p>&copy; 2024 EcoCapture Solutions Ltd</p>
-    </footer>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <p>&copy; 2024 EcoCapture Solutions Ltd</p>
+</footer>
+
 
     <script>
-        document.getElementById('hamburgerMenu').addEventListener('click', function() {
-            document.getElementById('navMenu').classList.toggle('show-menu');
+       document.addEventListener("DOMContentLoaded", function() {
+    // Mobile Menu Toggle
+    const hamburgerMenu = document.getElementById("hamburgerMenu");
+    const navMenu = document.getElementById("navMenu");
+
+    hamburgerMenu.addEventListener("click", function() {
+        navMenu.classList.toggle("show-menu");
+    });
+
+    // Dropdown Functionality
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+        dropdown.addEventListener('mouseenter', () => {
+            dropdown.querySelector('.dropdown-content').classList.add('show');
         });
-    </script>
+        dropdown.addEventListener('mouseleave', () => {
+            dropdown.querySelector('.dropdown-content').classList.remove('show');
+        });
+    });
+
+    // Smooth Scroll for Anchor Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Scroll to Top Button Functionality
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.style.display = "block"; // Show button
+        } else {
+            scrollToTopBtn.style.display = "none"; // Hide button
+        }
+    });
+
+    // Smooth scroll to the top when button is clicked
+    scrollToTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Smooth scroll effect
+        });
+    });
+});
+ </script>
+        
 </body>
 </html>
