@@ -1548,7 +1548,7 @@ button:hover {
 .scroll-to-top {
     position: fixed;
     bottom: 20px; /* Distance from the bottom of the viewport */
-    left: 60%; /* Center horizontally */
+    left: 20%; /* Center horizontally */
     transform: translateX(-50%); /* Offset the button to center it */
     background-color: #007bff; /* Button background color */
     color: white; /* Button text color */
