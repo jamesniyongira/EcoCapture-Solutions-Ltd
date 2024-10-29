@@ -211,7 +211,7 @@ nav ul li a:focus {
 
 /* Enlarge and animate heading */
 .hero h1 {
-    font-size: 4.0rem; /* Increased font size for prominence */
+    font-size: 3.8rem; /* Increased font size for prominence */
     margin: 0;
     animation: fadeInUp 2s ease-out; /* Animation effect */
     transition: transform 0.5s ease, color 0.3s ease; /* Smooth transitions */
